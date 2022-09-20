@@ -1,0 +1,3 @@
+Quantas turmas gerais vigentes existem em geral
+
+select count(turma) from turmas where status = 'A'
