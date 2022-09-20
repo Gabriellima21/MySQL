@@ -1,0 +1,9 @@
+// CRIAÇÃO DA TABELA STATUS
+
+create table status (
+id_status enum ('A','I') not null,
+status varchar (15),
+primary key (id_status)
+);
+
+
