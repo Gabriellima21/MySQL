@@ -1,0 +1,5 @@
+CREATE TRIGGER TGR_Status_Alunos 
+after update on turmas
+for each row 
+	
+    update alunos set status = new.status where turma = new.id_turma;
