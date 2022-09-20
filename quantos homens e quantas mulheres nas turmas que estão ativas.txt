@@ -1,0 +1,9 @@
+// quantos homens e quantas mulheres na turmas que estão ativas
+
+select count(sexo) from alunos where sexo = 'M' and status = 'A';
+
+select count(sexo) from alunos where sexo = 'F' and status = 'A';
+
+com union all:
+
+select count(sexo) as 'Qntd', 'Masculino' as Sexo from alunos where sexo = 'M' and status = 'A' union all select count(sexo), 'Feminino'  from alunos where sexo = 'F' and status = 'A';
