@@ -1,0 +1,8 @@
+// DADOS NA TABELA STATUS
+
+INSERT INTO STATUS 
+VALUES 
+('A', 'Ativo'),
+('I', 'Inativo');
+
+
