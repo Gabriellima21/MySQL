@@ -1,0 +1,9 @@
+// CRIAÇÃO DA TABELA PROFESSORES
+
+create table professores (
+id_professor int not null auto_increment,
+nome varchar (45),
+primary key (id_professor)
+);
+
+
