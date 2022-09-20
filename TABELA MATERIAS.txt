@@ -1,0 +1,21 @@
+// CRIAÇÃO DA TABELA MATERIAS
+
+create table materias (
+id_materia int not null auto_increment,
+nome varchar (45),
+curso int not null,
+professor int not null,
+primary key (id_materia)
+);
+
+
+// ADD CHAVE ESTRANGEIRA 
+
+alter table materias 
+add foreign key (curso)
+references cursos (id_curso);
+
+alter table materias 
+add foreign key (professor)
+references professores (id_professor);
+
