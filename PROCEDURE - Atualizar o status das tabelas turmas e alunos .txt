@@ -1,0 +1,40 @@
+DELIMITER $$
+CREATE PROCEDURE pr_status_alunos (in  p_idturma int, in status_att enum ('A','I'))
+BEGIN
+	update alunos set status = status_att where turma = p_idturma;
+END $$
+DELIMITER ;
+
+
+CALL pr_status_alunos (1,'I');
+
+
+
+DELIMITER $$
+CREATE PROCEDURE pr_status_alunos (in p_idturma int )
+BEGIN
+    set id_turmas = p_idturma;
+	SELECT id_turmas FROM trumas where status;
+	SET @status_att = new.status;
+	update alunos set status = @status_att where turma = id_turmas;
+END $$
+DELIMITER ;
+
+CALL pr_status_alunos (1);
+
+
+
+DELIMITER $$
+CREATE PROCEDURE pr_status_alunos (in p_idturma int )
+BEGIN
+	DECLARE status_att enum ('A','I');
+    set status_att := (SELECT status FROM turmas where id_turma = p_idturma);
+	update alunos set status = status_att where turma = p_idturma;
+END $$
+DELIMITER ;
+
+CALL pr_status_alunos (1);
+
+drop PROCEDURE pr_status_alunos;
+select * from turmas;
+SELECT * FROM ALUNOS;
