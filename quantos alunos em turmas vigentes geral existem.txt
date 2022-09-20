@@ -1,0 +1,3 @@
+// quantos alunos em turmas vigentes geral existem
+
+select count(id_matricula) from alunos where turma is not null and status = 'A';
