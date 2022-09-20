@@ -1,0 +1,16 @@
+// DADOS NA TABELA PROFESSORES
+
+INSERT INTO professores
+values 
+(default,'Catia Silva'),
+(default,'Roberto Cassiano'),
+(default,'Marcos Paulo'),
+(default,'Fabio Cosme'),
+(default,'Flavia Silva'),
+(default,'Borges Alves'),
+(default,'Douglas Mariano'),
+(default,'Marta Martins'),
+(default,'Silvio Rogério'),
+(default,'Rosana dos Santos');
+
+
