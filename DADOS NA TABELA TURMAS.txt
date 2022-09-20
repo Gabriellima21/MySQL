@@ -1,0 +1,11 @@
+// DADOS NA TABELA TURMAS
+
+insert into turmas
+values 
+(default,'ADS1',1),
+(default,'BIO1',6),
+(default,'ADS2',1),
+(default,'ADS4',1);
+
+
+UPDATE turmas SET STATUS = 'I' WHERE (`id_turma` = '4');	
