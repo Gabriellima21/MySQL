@@ -1,0 +1,15 @@
+// DADOS NA TABELA CURSOS
+
+insert into cursos 
+values 
+(default,'Análise e Desenvolvimento de Sistemas','2 anos'),
+(default,'Ciência Contábeis','4 anos'),
+(default,'Engenharia','5 anos'),
+(default,'Direito','5 anos'),
+(default,'Administração','4 anos'),
+(default,'Biologia','4 anos'),
+(default,'Biomedicina','5 anos'),
+(default,'Ciência da Computação','4 anos'),
+(default,'Pedagogia','4 anos');
+
+
