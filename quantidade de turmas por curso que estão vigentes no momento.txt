@@ -1,0 +1,3 @@
+quantidade de turmas por curso que estão vigentes no momento
+
+select t.turma, count(t.turma)as total, c.nome from turmas as t inner join cursos as c on t.curso = id_curso group by curso order by count(curso) desc;
