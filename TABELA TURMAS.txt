@@ -1,0 +1,23 @@
+// CRIAÇÃO DA TABELA TURMAS
+
+create table turmas (
+id_turma int not null auto_increment,
+turma varchar(15),
+curso int not null,
+primary key (id_turma)
+);
+
+
+// ADD CHAVE ESTRANGEIRA 
+
+alter table turmas 
+add foreign key (curso)
+references cursos (id_curso);
+
+alter table turmas
+add column status int not null;
+
+alter table turmas
+add foreign key (status)
+references status(id_status);
+
