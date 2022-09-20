@@ -1,0 +1,26 @@
+// CRIAÇÃO DA TABELA ALUNOS
+create table alunos (
+id_matricula int not null auto_increment,
+nome varchar (15) not null,
+sexo enum ('F','M') not null,
+curso int not null,
+turma int not null,
+status enum ('A','I'),
+primary key (id_matricula)
+);
+
+// ADD CHAVE ESTRANGEIRA 
+alter table alunos 
+add foreign key (curso)
+references cursos (id_curso);
+
+alter table alunos 
+add foreign key (turma)
+references turmas (id_turma);
+
+alter table alunos 
+add foreign key (status)
+references status (id_status);
+
+
+
