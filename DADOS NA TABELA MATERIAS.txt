@@ -1,0 +1,26 @@
+// DADOS NA TABELA MATERIAS
+
+insert into materias
+values 
+(default,'Programação Orientada a Objetos',1,1,1),
+(default,'Aplicações para Internet',1,2,1),
+(default,'Sistemas Operacionais',1,3,1),
+(default,'Organização e Arquitetura de Computadores',1,4,1),
+(default,'Anatomia Humana',6,5,2),
+(default,'Genética Humana',6,6,2),
+(default,'Histologia Humana',6,7,2),
+(default,'Biologia Celular',6,7,2),
+(default,'Biossegurança',6,8,2),
+(default,'Programação de Computadores',1,4,3),
+(default,'Técnicas de Desenvolvimento de Algoritmos',1,4,3),
+(default,'Modelagem de Negócios e Requisitos',1,9,3),
+(default,'Modelagem de Negócios e Requisitos',1,9,3),
+(default,'Interface Humano-Computador',1,10,3),
+(default,'Banco de Dados',1,2,4),
+(default,'PHP',1,4,4),
+(default,'C#',1,1,4),
+(default,'HTML',1,9,4);
+
+
+
+	
