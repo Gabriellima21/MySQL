@@ -1,0 +1,6 @@
+// o professor que cuida de mais materias para as turmas
+
+select m.professor, count(m.professor) as total, 
+p.nome from materias as m inner join professores as p on m.professor = p.id_professor 
+group by professor order by count(professor) desc;
+
